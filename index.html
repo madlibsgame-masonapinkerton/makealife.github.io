@@ -4,8 +4,22 @@
 <head>
 <title>Make A Life</title>
 </head>
+<style>
+    #Greeting {
+        display: none;
+    }
+</style>
 <body>
 <h1 style="text-align:center;">MAKE A LIFE</h1>
-<input type="text" placeholder="Enter Your Name:" required>
+<input type="text" placeholder="Enter Your Name:" required id="Name">
+<h2 id="Greeting">Hello, </h2>
+<button onclick="sayName()">SUBMIT</button>
+<script>
+    function sayName() {
+        var name = document.getElementById("Name").innerHTML;
+        var greeting = document.getElementById("Greeting").innerHTML = "Hello, " + name;
+        greeting.style.display = "block";
+    }
+</script>
 </body>
 </html>

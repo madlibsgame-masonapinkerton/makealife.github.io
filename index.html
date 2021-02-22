@@ -16,8 +16,8 @@
 <button onclick="sayName()">SUBMIT</button>
 <script>
     function sayName() {
-        var name = document.getElementById("Name").innerHTML;
-        var greeting = document.getElementById("Greeting").innerHTML = "Hello, " + name;
+        var name = document.getElementById("Name");
+        var greeting = document.getElementById("Greeting").innerHTML = "Hello, " + name.innerHTML;
         greeting.style.display = "block";
     }
 </script>
